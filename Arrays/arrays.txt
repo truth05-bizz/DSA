@@ -1,0 +1,28 @@
+
+# ARRAYS
+
+An arrays is simply a collection of element stored next to each other in memory
+
+- Four most common operation (every data structued are judged by this;)
+    - Access
+    - Search
+    - Insert
+    - Delete
+
+For Arrays;
+- Access = Fast (access by index)
+    -Big O = O(1)
+
+- Search = Slower (search by value/element;)
+    -Big O = O(n)
+
+- Insert = (Depends on insert Posision)
+    - At the end(append) = O(1)
+    - At the beginning = O(n)
+
+- Delete = (Depends on element posision)
+    - At the end(pop) = O(1) - no posision shift
+    - At the beginning = O(n) - posistion shift
+
+
+

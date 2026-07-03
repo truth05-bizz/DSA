@@ -1,0 +1,30 @@
+## LinkedList
+
+- Instead of storing elements next to each other in memory - Arrays
+
+    [Truth][Mary][John][David]
+
+- We sort each element seperately and connect them with links - LinkedList
+
+    [Truth | • ] ──► [Mary | • ] ──► [John | • ] ──► [David | None]
+
+        . Each box is called a Node;
+            Node
+            ├── Data
+            └── Next
+
+            
+e.g:
+    Node
+    ├── "Truth"
+    └── address of Mary
+
+# Advantage
+- Inserting, and Deleting(Modifying at the beginning or end) cost less - O(1)
+- No shifting
+
+# Disadvantage
+- Accessing cost more - O(n)
+- Does not use index hence we have to work      through the chain
+
+
