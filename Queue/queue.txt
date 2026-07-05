@@ -1,0 +1,19 @@
+## Queue
+   A queue is opposite of a stacks.
+   - FIFO = First in Last Out
+
+- Think of a queue at:
+    - a bank
+    - a supermarket
+    - people waiting for a bus 
+
+| Operation      | Meaning                 |
+| -------------- | ----------------------- |
+| enqueue(item)  | Add an item to the rear |
+| dequeue()      | Remove from the front   |
+| peek()/front() | View the front item     |
+| is_empty()     | Check if empty          |
+| size()         | Number of items         |
+
+
+For a Queue implementation, if we use a python built-in list, we will always have a O(1) and O(n). - So the best data structure to use for a queue is a LinkedList (Because there is no data shifting)
