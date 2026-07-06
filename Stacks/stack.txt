@@ -1,0 +1,57 @@
+## Stacks
+- LIFO
+    Last In, First Out
+
+** Real-World examples
+    * Browser Back Button
+        - Google
+            |
+        - Youtube
+            |
+        - Github
+            |
+        - Roadmap.sh
+
+## Stack Operations
+
+There are only a few:
+
+push(item)     -> add to top
+pop()          -> remove from top
+peek()/top()   -> see top item
+is_empty()     -> check if empty
+size()         -> number of items
+
+Example
+
+Start:
+
+- []
+
+Push 10:
+
+- [10]
+
+Push 20:
+
+- [10, 20]
+
+Push 30:
+
+- [10, 20, 30]
+
+Pop:
+
+- [10, 20]
+
+because 30 was the last item added.
+
+
+## Big O
+Operation  	Complexity
+----------------------
+push	        O(1)
+pop	            O(1)
+peek	        O(1)
+
+Very fast.
