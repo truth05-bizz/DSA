@@ -110,8 +110,9 @@ class Linkedlist:
         curr = self.head
 
         while curr:
-            print(f"{curr.data}")
+            print(curr.data, end=" -> ")
             curr = curr.next
+        print()
 
 
 ll = Linkedlist()
