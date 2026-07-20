@@ -1,0 +1,31 @@
+## HashMaps
+
+* HashMaps, HashTable, Map, Dictionary, or Associative are all the names of the same data structure. It is a data structure designed to be fast to work with.
+
+The reason a HashTable are sometimes preferred instead of arrays or linked lists is because ssearching for, adding, and deleting data can be done really quickly even for a large amount of data.
+
+## Terms
+    ""A Hash map is a data structure that stores data as key valued     pairs and allows very fast lookups using the key""
+
+    ""Hashing is the process of taking a key and converting it into a number"""
+
+    """A hash function converts any key (string, integer, tuple, etc.) into an integer called a hash value, which is then used to determine where the data should be stored."""
+
+- HashMaps are everywhere in python;
+    - python Dictionary
+    - Database indexes
+    - caching
+    - Authentication
+    - Counting frequencies
+    - Fast lookups
+
+# Collision
+    A Collision happens when two different keys produes the same hash/index.
+
+# Seperate Chaining
+    Separate Chaining is a collision-handling technique where each index (bucket) stores a linked list (or another collection) so multiple key-value pairs can exist at the same index.
+
+- Collision = Problem
+- Separate Chaining = One solution to that Problem
+
+

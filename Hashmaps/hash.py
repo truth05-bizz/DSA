@@ -40,8 +40,6 @@ class HashMap:
         curr.next = new_node
 
     def show(self, index):
-        # print(self.buckets)
-
         if self.buckets[index] is None:
             return None
 
@@ -51,11 +49,51 @@ class HashMap:
             print(f"{curr.key}: {curr.value}", end=" -> ")
             curr = curr.next
 
-        # return data
+    def get(self, data):
+        index = self.get_index(data)
+
+        if self.buckets[index] is None:
+            return None
+
+        curr = self.buckets[index]
+
+        while curr:
+            if curr.key == data:
+                return curr.value
+
+            curr = curr.next
+
+        return None
+
+    def remove(self, data):
+        index = self.get_index(data)
+
+        if self.buckets[index] is None:
+            return None
+
+        if self.buckets[index].key == data:
+            remove_value = self.buckets[index].value
+            self.buckets[index] = self.buckets[index].next
+            return remove_value
+
+        curr = self.buckets[index]
+        prv = None
+
+        while curr:
+            if curr.key == data:
+                remove_value = curr.value
+                prv.next = curr.next
+                return
+
+            prv = curr
+            curr = curr.next
+
+        return remove_value
 
 
 hm = HashMap()
 # hm.show()
+"""
 print(hm.get_index("Truth"))
 print(hm.get_index("Ben"))
 print(hm.get_index("Mary"))
@@ -68,6 +106,7 @@ print(hm.get_index("Fidel"))
 print(hm.get_index("Brown"))
 print(hm.get_index("Emma"))
 print(hm.get_index("Mosh"))
+"""
 
 hm.put("Truth", 81)
 hm.put("Ben", 73)
@@ -81,4 +120,10 @@ hm.put("Fidel", 55)
 hm.put("Brown", 96)
 hm.put("Emma", 47)
 hm.put("Mosh", 88)
-print(hm.show(4))
+print(hm.show(5))
+print()
+print(hm.get("Martha"))
+print()
+remove_data_value = hm.remove("Truth")
+print(remove_data_value)
+print(hm.show(5))
